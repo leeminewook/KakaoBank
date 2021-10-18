@@ -1,6 +1,9 @@
 import React from "react";
 import "./Register.css";
+import { useHistory } from "react-router-dom";
 const Register = () => {
+  const history = useHistory();
+
   return (
     <>
       <div className="RegisterForm">
@@ -88,10 +91,20 @@ const Register = () => {
           </div>
           <div className="endingBtn">
             <div className="cancelDiv">
-              <button className="cancelBtn kakaoBtn">취소</button>
+              <button
+                className="cancelBtn kakaoBtn"
+                onClick={() => history.push("/")}
+              >
+                취소
+              </button>
             </div>
             <div className="registerDiv">
-              <button className="registerBtn kakaoBtn">회원가입</button>
+              <button
+                className="registerReqBtn kakaoBtn"
+                onClick={() => history.push("/simple/register")}
+              >
+                회원가입
+              </button>
             </div>
           </div>
         </div>

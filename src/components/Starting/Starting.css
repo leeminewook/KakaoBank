@@ -1,18 +1,17 @@
-.logo {
-  width: 126px;
-  height: 126px;
-  margin-top: 146px;
+.kakaoLogo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin-left: 80px;
+  margin-top: 98px;
 }
 
 .LogoDiv {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 309px;
-  box-sizing: border-box;
 }
 
 .StartingForm {
   height: 100%;
+  background-color: #ffe700;
 }
 
 .login {
@@ -28,6 +27,64 @@
 }
 
 .register {
-  width: 314px;
-  height: 64px;
+}
+
+.loginDiv {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 467px;
+  margin-left: 30px;
+}
+.loginBtn {
+  width: 300px;
+  height: 65px;
+  box-sizing: border-box;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #ffe700;
+  color: white;
+  font-family: Kakao OTF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.registerSubtitle {
+  margin-left: 61px;
+  font-family: Kakao OTF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  width: 117px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #646464;
+}
+.registerDiv {
+  position: absolute;
+  margin-top: 566px;
+  display: flex;
+}
+.registerPage {
+  font-family: Kakao OTF;
+  font-style: normal;
+  font-weight: bold;
+  width: 100px;
+  height: 21px;
+  margin-left: 22px;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
 }

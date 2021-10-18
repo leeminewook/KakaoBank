@@ -10,19 +10,22 @@ const Starting = () => {
     <>
       <div className="StartingForm">
         <div className="LogoDiv">
-          <img src={logo} className="logo" />
+          <img src={logo} className="kakaoLogo" />
         </div>
-        <div className="BtnDiv">
-          <div className="loginBtn">
-            <button className="kakaoBtn login">로그인</button>
+        <div className="startingOptions">
+          <div className="loginDiv">
+            <button className="loginBtn">로그인</button>
           </div>
-          <div className="registerBtn">
-            <button
-              className="kakaoBtn register"
-              onClick={() => history.push("/register")}
+          <div className="registerDiv">
+            <div className="registerSubtitle">계정이 없으신가요?</div>
+            <div
+              className="registerPage"
+              onClick={() => {
+                history.push("/register");
+              }}
             >
-              회원가입
-            </button>
+              가입하기
+            </div>
           </div>
         </div>
       </div>
