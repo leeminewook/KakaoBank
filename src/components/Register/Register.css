@@ -2,20 +2,21 @@
   font-size: 22px;
   font-weight: 600;
   text-align: center;
-  margin-top: 40px;
+  padding-top: 20px;
   width: 100%;
 }
 
 .register-optoins-id-title {
   font-size: 18px;
   padding-bottom: 2px;
+  margin-bottom: 5px;
 }
 
 .register-options-id {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .inputBtn {
@@ -27,7 +28,6 @@
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 30px;
 }
 .register-options-id-input {
   width: 70%;
@@ -38,7 +38,9 @@
 }
 
 .RegisterForm {
+  height: 100%;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .idButton {
@@ -59,24 +61,26 @@
 .register-optoins-pw-title {
   font-size: 18px;
   padding-bottom: 2px;
+  margin-bottom: 5px;
 }
 
 .register-options-pw {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .register-options-phone {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .register-optoins-phone-title {
   font-size: 18px;
   padding-bottom: 2px;
+  margin-bottom: 5px;
 }
 .register-options-phone-input {
   width: 100%;
@@ -90,11 +94,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .register-options-birthday-title {
   font-size: 18px;
   padding-bottom: 2px;
+  margin-bottom: 5px;
 }
 .register-options-birthday-inputs {
   display: flex;
@@ -126,11 +131,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .register-optoins-name-title {
   font-size: 18px;
   padding-bottom: 2px;
+  margin-bottom: 5px;
 }
 .register-options-name-input {
   width: 100%;
@@ -149,48 +155,22 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .register-options-nickName-input {
-  width: 70%;
+  width: 100%;
 }
 
 .nickNameInputBox {
   width: 90%;
 }
 
-.nickNameButton {
-  width: 100%;
-  height: 100%;
-}
-.register-options-nickName-Btn {
-  width: 30%;
-}
-.register-optoins-profile {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 43px;
-  margin-top: 43px;
-}
-.register-optoins-profile-title {
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-}
-.register-optoins-profile-btn-Div {
-  display: flex;
-  width: 30%;
-}
-.profileUploadBtn {
-  width: 100%;
-  height: 30px;
-}
 .register-optoins-check {
   display: flex;
-  margin-bottom: 43px;
+  margin-bottom: 20px;
 }
+
 .register-options-check-boxDiv {
-  margin-right: 15px;
 }
 .register-options-check-title {
   font-size: 18px;
@@ -202,7 +182,6 @@
   width: 100%;
   justify-content: space-between;
   height: 50px;
-  margin-top: 63px;
 }
 .cancelDiv {
   width: 47.5%;
@@ -212,7 +191,9 @@
   width: 100%;
   height: 100%;
 }
-.registerDiv {
+.registerDi {
+  width: 47.5%;
+  height: 100%;
 }
 .registerReqBtn {
   width: 100%;

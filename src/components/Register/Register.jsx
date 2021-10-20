@@ -63,22 +63,11 @@ const Register = () => {
             </div>
           </div>
           <div className="register-options-nickName">
-            <div className="register-optoins-nickName-title">아이디</div>
+            <div className="register-optoins-nickName-title">닉네임</div>
             <div className="inputBtn">
               <div className="register-options-nickName-input">
                 <input type="text" className="kakaoInput nickNameInputBox" />
               </div>
-              <div className="register-options-nickName-Btn">
-                <button className="kakaoBtn nickNameButton">중복확인</button>
-              </div>
-            </div>
-          </div>
-          <div className="register-optoins-profile">
-            <div className="register-optoins-profile-title">
-              프로필 사진등록
-            </div>
-            <div className="register-optoins-profile-btn-Div">
-              <button className="profileUploadBtn kakaoBtn">사진 선택</button>
             </div>
           </div>
           <div className="register-optoins-check">
@@ -98,12 +87,12 @@ const Register = () => {
                 취소
               </button>
             </div>
-            <div className="registerDiv">
+            <div className="registerDi">
               <button
                 className="registerReqBtn kakaoBtn"
-                onClick={() => history.push("/simple/register")}
+                onClick={() => history.push("/profile")}
               >
-                회원가입
+                다음으로
               </button>
             </div>
           </div>
