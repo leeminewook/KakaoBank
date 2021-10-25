@@ -14,7 +14,14 @@ const Starting = () => {
         </div>
         <div className="startingOptions">
           <div className="loginDiv">
-            <button className="loginBtn">로그인</button>
+            <button
+              className="loginBtn"
+              onClick={() => {
+                history.push("/login");
+              }}
+            >
+              로그인
+            </button>
           </div>
           <div className="registerDiv">
             <div className="registerSubtitle">계정이 없으신가요?</div>

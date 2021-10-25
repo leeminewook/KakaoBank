@@ -3,7 +3,7 @@ body {
 }
 .contant {
   width: 360px;
-  height: 640px;
+  min-height: 640px;
   margin: auto;
   box-sizing: border-box;
 }

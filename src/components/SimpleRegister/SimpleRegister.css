@@ -2,3 +2,39 @@
   width: 100%;
   height: 100%;
 }
+.simpleRegisterTitle {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 42px;
+  box-sizing: border-box;
+}
+
+.simpleRegisterOptions {
+  padding-top: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.simpleRegisterOptionsTitle {
+  margin-bottom: 15px;
+}
+.simpleRegisterOptoinsSubtitle {
+  margin-top: 15px;
+}
+.simpleRegisterOptionsInputs {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.simpleRegisterSubmitDiv {
+  position: absolute;
+  width: 360px;
+  height: 50px;
+  top: 590px;
+}
+.simpleRegisterSubmitBtn {
+  width: 360px;
+  height: 50px;
+  border-radius: 0;
+}

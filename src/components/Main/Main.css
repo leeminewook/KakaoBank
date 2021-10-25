@@ -1,0 +1,35 @@
+.mainForm {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.mainTitleDiv {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+.mainTitleDiv-title {
+  font-size: 24px;
+  margin-right: 15px;
+}
+.mainTitleDiv-button {
+  font-size: 14px;
+}
+.mainOptions {
+  margin-top: 50px;
+}
+.main-addCardDiv {
+  width: 100%;
+  background-color: #eaeaea;
+  height: 54px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 9px;
+}
+.main-addCardBtn-plus {
+  width: 20px;
+}

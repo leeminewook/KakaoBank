@@ -1,0 +1,61 @@
+.mainCardForm {
+  width: 320px;
+  height: 140px;
+  box-sizing: border-box;
+  padding: 10px 8px;
+  background: #c5ede6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin-bottom: 18px;
+}
+.mainCard-mainTitle {
+  font-size: 14px;
+  color: black;
+  box-sizing: border-box;
+}
+.mainCard-subTitle {
+  font-size: 10px;
+  color: #656565;
+}
+
+.mainCard-money {
+  font-size: 18px;
+  text-align: center;
+}
+.giveAndTakeDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.takeDiv {
+  font-size: 18px;
+  padding-left: 15px;
+}
+.giveDiv {
+  font-size: 18px;
+  padding-right: 15px;
+}
+
+.mainTitleDiv-buttonDiv {
+  width: 60px;
+  height: 30px;
+  box-sizing: border-box;
+  display: flex;
+}
+.mainTitleDiv-button {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  border: none;
+}
+.sideImg {
+  width: 50px;
+}
+.sideImgDiv {
+  padding-left: 130px;
+  box-sizing: border-box;
+}
