@@ -6,7 +6,7 @@
   background: #c5ede6;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   border-radius: 5px;
   margin-bottom: 18px;
 }
@@ -22,7 +22,10 @@
 
 .mainCard-money {
   font-size: 18px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
 }
 .giveAndTakeDiv {
   display: flex;

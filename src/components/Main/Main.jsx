@@ -4,6 +4,7 @@ import "./Main.css";
 import plus from "../../assets/img/Group 15.png";
 import sideImg from "../../assets/img/KakaoTalk_Photo_2021-10-20-10-59-12.png";
 const Main = () => {
+  const main = true;
   return (
     <>
       <div className="mainForm">
@@ -17,10 +18,10 @@ const Main = () => {
           </div>
         </div>
         <div className="mainOptions">
-          <MainCardContainer />
-          <MainCardContainer />
-          <MainCardContainer />
-          <MainCardContainer />
+          <MainCardContainer main={main} />
+          <MainCardContainer main={main} />
+          <MainCardContainer main={main} />
+          <MainCardContainer main={main} />
         </div>
         <div className="main-addCardDiv">
           <div className="main-addCardBtn">

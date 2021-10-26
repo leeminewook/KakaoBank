@@ -1,0 +1,60 @@
+.TakeMoneyForm {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.TakeMoneyTitleDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 15px;
+}
+.TakeMoneyTitleDiv-title {
+  font-size: 18px;
+}
+.TakeMoneyTitleDiv-cancle {
+  font-size: 18px;
+  position: absolute;
+  margin-left: 280px;
+}
+.TakeMoneyOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.TakeMoneyOptions-money {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+.TakeMoneyOptions-inputDiv {
+  width: 100%;
+  box-sizing: border-box;
+}
+.TakeMoneyOptions-inputDiv-input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 59px;
+  background: #e9e9e9;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  padding: 0.3rem 1rem;
+}
+.TakeMoneySubmitDiv {
+  width: 100%;
+  margin-top: auto;
+}
+.TakeMoneySubmitBtn {
+  width: 100%;
+  height: 60px;
+  border-radius: 0 !important;
+}

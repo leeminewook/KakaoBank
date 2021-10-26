@@ -9,7 +9,7 @@ const SimpleLogin = () => {
       <div className="SimpleLoginForm">
         <div className="SimpleLoginTitle">간편 로그인</div>
         <div className="SimpleLoginInputDiv">
-          <SimpleInputContainer />
+          <SimpleInputContainer i="6" />
         </div>
         <div className="SimpleLoginSubmitDiv">
           <button

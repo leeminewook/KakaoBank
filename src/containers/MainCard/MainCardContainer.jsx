@@ -1,10 +1,10 @@
 import React from "react";
 import MainCard from "../../components/MainCard/MainCard";
 
-const MainCardContainer = () => {
+const MainCardContainer = ({ main }) => {
   return (
     <>
-      <MainCard />
+      <MainCard main={main} />
     </>
   );
 };

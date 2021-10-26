@@ -15,7 +15,7 @@ const SimpleRegister = () => {
             간편인증번호를 입력하세요
           </div>
           <div className="simpleRegisterOptionsInputs">
-            <SimpleInputContainer />
+            <SimpleInputContainer i="6" />
           </div>
           <div className="simpleRegisterOptoinsSubtitle">
             6자리 숫자를 입력하세요

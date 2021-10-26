@@ -1,7 +1,7 @@
 import React from "react";
 import SimpleInput from "../../components/SimpleInput/SimpleInput";
 
-const SimpleInputContainer = () => {
+const SimpleInputContainer = ({ i }) => {
   const refNextInput = (e) => {
     console.log(e);
     if (e.target.value.length === e.target.maxLength) {
@@ -11,7 +11,7 @@ const SimpleInputContainer = () => {
 
   return (
     <>
-      <SimpleInput refNextInput={refNextInput} />
+      <SimpleInput refNextInput={refNextInput} i={i} />
     </>
   );
 };

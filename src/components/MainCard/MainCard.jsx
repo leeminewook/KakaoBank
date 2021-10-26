@@ -1,6 +1,6 @@
 import React from "react";
 import "./MainCard.css";
-const MainCard = () => {
+const MainCard = ({ main }) => {
   return (
     <>
       <div className="mainCardForm">
@@ -9,10 +9,12 @@ const MainCard = () => {
           <div className="mainCard-subTitle">1234-56-789101</div>
         </div>
         <div className="mainCard-money">10,000원</div>
-        <div className="giveAndTakeDiv">
-          <div className="takeDiv">가져오기</div>
-          <div className="giveDiv">이체</div>
-        </div>
+        {main && (
+          <div className="giveAndTakeDiv">
+            <div className="takeDiv">가져오기</div>
+            <div className="giveDiv">이체</div>
+          </div>
+        )}
       </div>
     </>
   );
