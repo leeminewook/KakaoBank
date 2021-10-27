@@ -1,7 +1,10 @@
 import React from "react";
 import "./TakePassword.css";
 import SimpleInputContainer from "../../containers/SimpleInput/SimpleInputContainer";
+import { useHistory } from "react-router-dom";
+
 const TakePassword = () => {
+  const history = useHistory();
   return (
     <>
       <div className="TakePasswordForm">
@@ -14,7 +17,14 @@ const TakePassword = () => {
           <SimpleInputContainer i="4" />
         </div>
         <div className="TakePasswordSubmitDiv">
-          <button className="TakePasswordSubmitBtn kakaoBtn">확인</button>
+          <button
+            className="TakePasswordSubmitBtn kakaoBtn"
+            onClick={() => {
+              history.push("/main");
+            }}
+          >
+            확인
+          </button>
         </div>
       </div>
     </>

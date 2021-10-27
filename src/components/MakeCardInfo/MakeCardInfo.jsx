@@ -1,7 +1,11 @@
 import React from "react";
 import MakeCardTitle from "../MakeCardTitle/MakeCardTitle";
 import "./MakeCardInfo.css";
+import { useHistory } from "react-router-dom";
+
 const MakeCardInfo = () => {
+  const history = useHistory();
+
   return (
     <>
       <div className="MakeCardInfoForm">
@@ -28,7 +32,14 @@ const MakeCardInfo = () => {
           </div>
         </div>
         <div className="MakeCardSubmitDiv">
-          <button className="MakeCardSubmitBtn nextBtn">다음 단계로</button>
+          <button
+            className="MakeCardSubmitBtn nextBtn"
+            onClick={() => {
+              history.push("/makecard/nick");
+            }}
+          >
+            다음 단계로
+          </button>
         </div>
       </div>
     </>

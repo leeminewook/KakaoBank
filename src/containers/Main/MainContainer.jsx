@@ -4,17 +4,17 @@ import CardApi from "../../assets/api/CardApi";
 
 const MainContainer = () => {
   const [cardList, setCardList] = useState([]);
-  const tryGetCardList = async () => {
-    const token = localStorage.getItem("accessToken");
+  // const tryGetCardList = async () => {
+  //   const token = localStorage.getItem("accessToken");
 
-    await CardApi.getCardList(token).then((res) => {
-      console.log(res);
-      setCardList(res.data.data);
-    });
-  };
-  useEffect(() => {
-    tryGetCardList();
-  }, []);
+  //   await CardApi.getCardList(token).then((res) => {
+  //     console.log(res);
+  //     setCardList(res.data.data);
+  //   });
+  // };
+  // useEffect(() => {
+  //   tryGetCardList();
+  // }, []);
   return (
     <>
       <Main cardList={cardList} />

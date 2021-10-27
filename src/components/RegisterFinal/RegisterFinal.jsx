@@ -1,7 +1,9 @@
 import React from "react";
 import normalProfile from "../../assets/img/KakaoTalk_Photo_2021-10-20-10-59-12.png";
 import "./RegisterFinal.css";
+import { useHistory } from "react-router-dom";
 const RegisterFinal = () => {
+  const history = useHistory();
   return (
     <>
       <div className="RegisterFinalForm">
@@ -16,7 +18,12 @@ const RegisterFinal = () => {
           </div>
         </div>
         <div className="RegisterFinal-Submit">
-          <button className="RegisterFinal-Submit-btn kakaoBtn">
+          <button
+            className="RegisterFinal-Submit-btn kakaoBtn"
+            onClick={() => {
+              history.push("/");
+            }}
+          >
             카카오 뱅크 시작하기
           </button>
         </div>

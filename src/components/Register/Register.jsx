@@ -30,7 +30,7 @@ const Register = ({
                   type="text"
                   className="kakaoInput idInputBox"
                   value={id}
-                  onChange={() => setId()}
+                  onChange={(e) => setId(e.target.value)}
                 />
               </div>
               <div className="register-options-id-Btn">
@@ -46,7 +46,7 @@ const Register = ({
                   type="text"
                   className="kakaoInput pwInputBox"
                   value={password}
-                  onChange={() => setPassword()}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
             </div>
@@ -59,7 +59,7 @@ const Register = ({
                   type="text"
                   className="kakaoInput phoneInputBox"
                   value={phoneNumber}
-                  onChange={() => setPhoneNumber()}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
                 />
               </div>
             </div>
@@ -72,7 +72,9 @@ const Register = ({
                   type="text"
                   className="register-optoins-birthday-inputs-first-input kakaoInput"
                   value={residentRegistrationNumber}
-                  onChange={() => setResidentRegistrationNumber()}
+                  onChange={(e) =>
+                    setResidentRegistrationNumber(e.target.value)
+                  }
                 />
               </div>
             </div>
@@ -85,7 +87,7 @@ const Register = ({
                   type="text"
                   className="kakaoInput nameInputBox"
                   value={name}
-                  onChange={() => setName()}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
             </div>
@@ -98,7 +100,7 @@ const Register = ({
                   type="text"
                   className="kakaoInput nickNameInputBox"
                   value={nickName}
-                  onChange={() => setNickName()}
+                  onChange={(e) => setNickName(e.target.value)}
                 />
               </div>
             </div>
@@ -123,8 +125,8 @@ const Register = ({
             <div className="registerDi">
               <button
                 className="registerReqBtn kakaoBtn"
-                // onClick={() => history.push("/profile")}
-                onClick={() => {}}
+                onClick={() => history.push("/profile")}
+                // onClick={() => {}}
               >
                 다음으로
               </button>
