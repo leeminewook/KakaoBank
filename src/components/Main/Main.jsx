@@ -3,7 +3,7 @@ import MainCardContainer from "../../containers/MainCard/MainCardContainer";
 import "./Main.css";
 import plus from "../../assets/img/Group 15.png";
 import sideImg from "../../assets/img/KakaoTalk_Photo_2021-10-20-10-59-12.png";
-const Main = () => {
+const Main = ({ cardList }) => {
   const main = true;
   return (
     <>
@@ -18,6 +18,15 @@ const Main = () => {
           </div>
         </div>
         <div className="mainOptions">
+          {cardList.map((card, index) => (
+            <MainCardContainer
+              main={main}
+              accountNumber={card.accountNumber}
+              kindOfBank={card.kindOfBank}
+              money={card.money}
+              nickname={card.nickname}
+            />
+          ))}
           <MainCardContainer main={main} />
           <MainCardContainer main={main} />
           <MainCardContainer main={main} />

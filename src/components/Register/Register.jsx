@@ -30,7 +30,7 @@ const Register = ({
                   type="text"
                   className="kakaoInput idInputBox"
                   value={id}
-                  onChange={setId()}
+                  onChange={() => setId()}
                 />
               </div>
               <div className="register-options-id-Btn">
@@ -46,7 +46,7 @@ const Register = ({
                   type="text"
                   className="kakaoInput pwInputBox"
                   value={password}
-                  onChange={setPassword()}
+                  onChange={() => setPassword()}
                 />
               </div>
             </div>
@@ -59,7 +59,7 @@ const Register = ({
                   type="text"
                   className="kakaoInput phoneInputBox"
                   value={phoneNumber}
-                  onChange={setPhoneNumber()}
+                  onChange={() => setPhoneNumber()}
                 />
               </div>
             </div>
@@ -72,7 +72,7 @@ const Register = ({
                   type="text"
                   className="register-optoins-birthday-inputs-first-input kakaoInput"
                   value={residentRegistrationNumber}
-                  onChange={setResidentRegistrationNumber()}
+                  onChange={() => setResidentRegistrationNumber()}
                 />
               </div>
             </div>
@@ -85,7 +85,7 @@ const Register = ({
                   type="text"
                   className="kakaoInput nameInputBox"
                   value={name}
-                  onChange={setName()}
+                  onChange={() => setName()}
                 />
               </div>
             </div>
@@ -98,7 +98,7 @@ const Register = ({
                   type="text"
                   className="kakaoInput nickNameInputBox"
                   value={nickName}
-                  onChange={setNickName()}
+                  onChange={() => setNickName()}
                 />
               </div>
             </div>

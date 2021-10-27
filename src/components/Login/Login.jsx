@@ -1,7 +1,7 @@
 import React from "react";
 import "./Login.css";
 import Logo from "../../assets/img/997BD7335D089C3023.png";
-const Login = () => {
+const Login = ({ id, setId, password, setPassword, tryLogin }) => {
   return (
     <>
       <div className="LoginForm">
@@ -12,18 +12,35 @@ const Login = () => {
           <div className="LoginOptoins-idDiv">
             <div className="idDiv-title">아이디</div>
             <div className="idDiv-inputDiv">
-              <input type="text" className="idDiv-input" />
+              <input
+                type="text"
+                className="idDiv-input"
+                value={id}
+                onChange={(e) => setId(e.target.value)}
+              />
             </div>
           </div>
           <div className="LoginOptoins-pwDiv">
             <div className="pwDiv-title">비밀번호</div>
             <div className="pwDiv-inputDiv">
-              <input type="password" className="pwDiv-input" />
+              <input
+                type="password"
+                className="pwDiv-input"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
           </div>
         </div>
         <div className="Login-LoginBtnDiv">
-          <button className="Login-LoginBtn kakaoBtn">로그인</button>
+          <button
+            className="Login-LoginBtn kakaoBtn"
+            onClick={() => {
+              tryLogin(id, password);
+            }}
+          >
+            로그인
+          </button>
         </div>
       </div>
     </>

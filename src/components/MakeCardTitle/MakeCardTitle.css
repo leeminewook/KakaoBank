@@ -1,0 +1,13 @@
+.MakeCardTitleDiv {
+  display: flex;
+  justify-content: center;
+}
+.MakeCardTitle {
+  font-size: 24px;
+}
+.MakeCardCancle {
+  font-size: 18px;
+  position: absolute;
+  margin-left: 287px;
+  margin-top: 4px;
+}

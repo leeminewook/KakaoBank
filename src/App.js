@@ -1,7 +1,13 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import TakeMoney from "./components/TakeMoney/TakeMoney";
+import { ToastContainer } from "react-toastify";
+
 import LoginPage from "./pages/Login/LoginPage";
 import MainPage from "./pages/Main/MainPage";
+import MakeCardAgreePage from "./pages/MakeCardAgree/MakeCardAgreePage";
+import MakeCardInfoPage from "./pages/MakeCardInfo/MakeCardInfoPage";
+import MakeCardNickPage from "./pages/MakeCardNick/MakeCardNickPage";
+import MakeCardPasswordPage from "./pages/MakeCardPassword/MakeCardPasswordPage";
+import MakeCardSuccessPage from "./pages/MakeCardSuccess/MakeCardSuccessPage";
 import RegisterPage from "./pages/Register/RegisterPage";
 import RegisterFinalPage from "./pages/RegisterFinal/RegisterFinalPage";
 import RegisterProfilePage from "./pages/RegisterProfile/RegisterProfilePage";
@@ -15,6 +21,7 @@ import TakePasswordPage from "./pages/TakePassword/TakePasswordPage";
 function App() {
   return (
     <div className="App">
+      <ToastContainer />
       <Router>
         <Switch>
           <Route exact path="/" component={StartingPage} />
@@ -28,6 +35,10 @@ function App() {
           <Route exact path="/take" component={TakeMainPage} />
           <Route path="/take/money" component={TakeMoneyPage} />
           <Route path="/take/password" component={TakePasswordPage} />
+          <Route exact path="/makecard" component={MakeCardInfoPage} />
+          <Route path="/makecard/nick" component={MakeCardNickPage} />
+          <Route path="/makecard/password" component={MakeCardPasswordPage} />
+          <Route path="/makecard/success" component={MakeCardSuccessPage} />
         </Switch>
       </Router>
     </div>
