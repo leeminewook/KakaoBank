@@ -1,9 +1,22 @@
 import React from "react";
-import "./TakePassword";
+import "./TakePassword.css";
+import SimpleInputContainer from "../../containers/SimpleInput/SimpleInputContainer";
 const TakePassword = () => {
   return (
     <>
-      <div>가져오기 비번</div>
+      <div className="TakePasswordForm">
+        <div className="TakePasswordTitle">
+          민욱님의 계좌
+          <br />
+          비밀번호
+        </div>
+        <div className="TakePasswordInputDiv">
+          <SimpleInputContainer i="4" />
+        </div>
+        <div className="TakePasswordSubmitDiv">
+          <button className="TakePasswordSubmitBtn kakaoBtn">확인</button>
+        </div>
+      </div>
     </>
   );
 };
