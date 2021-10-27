@@ -111,20 +111,8 @@
   box-sizing: border-box;
 }
 .register-optoins-birthday-inputs-first {
-  width: 40%;
-  box-sizing: border-box;
-}
-.inputCut {
-  width: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.register-optoins-birthday-inputs-second {
-  width: 5%;
-}
-.register-optoins-birthday-inputs-second-input {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .register-options-name {
@@ -162,7 +150,8 @@
 }
 
 .nickNameInputBox {
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .register-optoins-check {

@@ -1,7 +1,20 @@
 import React from "react";
 import "./Register.css";
 import { useHistory } from "react-router-dom";
-const Register = () => {
+const Register = ({
+  id,
+  setId,
+  password,
+  setPassword,
+  phoneNumber,
+  setPhoneNumber,
+  name,
+  setName,
+  residentRegistrationNumber,
+  setResidentRegistrationNumber,
+  nickName,
+  setNickName,
+}) => {
   const history = useHistory();
 
   return (
@@ -13,7 +26,12 @@ const Register = () => {
             <div className="register-optoins-id-title">아이디</div>
             <div className="inputBtn">
               <div className="register-options-id-input">
-                <input type="text" className="kakaoInput idInputBox" />
+                <input
+                  type="text"
+                  className="kakaoInput idInputBox"
+                  value={id}
+                  onChange={setId()}
+                />
               </div>
               <div className="register-options-id-Btn">
                 <button className="kakaoBtn idButton">중복확인</button>
@@ -24,7 +42,12 @@ const Register = () => {
             <div className="register-optoins-pw-title">비밀번호</div>
             <div className="inputBtn">
               <div className="register-options-pw-input">
-                <input type="text" className="kakaoInput pwInputBox" />
+                <input
+                  type="text"
+                  className="kakaoInput pwInputBox"
+                  value={password}
+                  onChange={setPassword()}
+                />
               </div>
             </div>
           </div>
@@ -32,7 +55,12 @@ const Register = () => {
             <div className="register-optoins-phone-title">전화번호</div>
             <div className="inputBtn">
               <div className="register-options-phone-input">
-                <input type="text" className="kakaoInput phoneInputBox" />
+                <input
+                  type="text"
+                  className="kakaoInput phoneInputBox"
+                  value={phoneNumber}
+                  onChange={setPhoneNumber()}
+                />
               </div>
             </div>
           </div>
@@ -43,13 +71,8 @@ const Register = () => {
                 <input
                   type="text"
                   className="register-optoins-birthday-inputs-first-input kakaoInput"
-                />
-              </div>
-              <div className="inputCut">-</div>
-              <div className="register-optoins-birthday-inputs-second">
-                <input
-                  type="text"
-                  className="register-optoins-birthday-inputs-second-input kakaoInput"
+                  value={residentRegistrationNumber}
+                  onChange={setResidentRegistrationNumber()}
                 />
               </div>
             </div>
@@ -58,7 +81,12 @@ const Register = () => {
             <div className="register-optoins-name-title">이름(실명)</div>
             <div className="inputBtn">
               <div className="register-options-name-input">
-                <input type="text" className="kakaoInput nameInputBox" />
+                <input
+                  type="text"
+                  className="kakaoInput nameInputBox"
+                  value={name}
+                  onChange={setName()}
+                />
               </div>
             </div>
           </div>
@@ -66,7 +94,12 @@ const Register = () => {
             <div className="register-optoins-nickName-title">닉네임</div>
             <div className="inputBtn">
               <div className="register-options-nickName-input">
-                <input type="text" className="kakaoInput nickNameInputBox" />
+                <input
+                  type="text"
+                  className="kakaoInput nickNameInputBox"
+                  value={nickName}
+                  onChange={setNickName()}
+                />
               </div>
             </div>
           </div>
@@ -90,7 +123,8 @@ const Register = () => {
             <div className="registerDi">
               <button
                 className="registerReqBtn kakaoBtn"
-                onClick={() => history.push("/profile")}
+                // onClick={() => history.push("/profile")}
+                onClick={() => {}}
               >
                 다음으로
               </button>

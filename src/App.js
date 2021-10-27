@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TakeMoney from "./components/TakeMoney/TakeMoney";
 import LoginPage from "./pages/Login/LoginPage";
 import MainPage from "./pages/Main/MainPage";
@@ -15,19 +15,21 @@ import TakePasswordPage from "./pages/TakePassword/TakePasswordPage";
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route exact path="/" component={StartingPage} />
-        <Route path="/register" component={RegisterPage} />
-        <Route path="/simpleregister" component={SimpleRegisterPage} />
-        <Route path="/profile" component={RegisterProfilePage} />
-        <Route path="/final" component={RegisterFinalPage} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/simplelogin" component={SimpleLoginPage} />
-        <Route path="/main" component={MainPage} />
-        <Route exact path="/take" component={TakeMainPage} />
-        <Route path="/take/money" component={TakeMoneyPage} />
-        <Route path="/take/password" component={TakePasswordPage} />
-      </Switch>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={StartingPage} />
+          <Route path="/register" component={RegisterPage} />
+          <Route path="/simpleregister" component={SimpleRegisterPage} />
+          <Route path="/profile" component={RegisterProfilePage} />
+          <Route path="/final" component={RegisterFinalPage} />
+          <Route path="/login" component={LoginPage} />
+          <Route path="/simplelogin" component={SimpleLoginPage} />
+          <Route path="/main" component={MainPage} />
+          <Route exact path="/take" component={TakeMainPage} />
+          <Route path="/take/money" component={TakeMoneyPage} />
+          <Route path="/take/password" component={TakePasswordPage} />
+        </Switch>
+      </Router>
     </div>
   );
 }
