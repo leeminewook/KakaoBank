@@ -21,7 +21,14 @@ const MainCard = ({ main, accountNumber, kindOfBank, money, nickname }) => {
             >
               가져오기
             </div>
-            <div className="giveDiv">이체</div>
+            <div
+              className="giveDiv"
+              onClick={() => {
+                history.push("/sendmoney/choose");
+              }}
+            >
+              이체
+            </div>
           </div>
         </div>
       ) : (

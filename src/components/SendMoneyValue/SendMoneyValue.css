@@ -1,0 +1,43 @@
+.SendMoneyValueForm {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.SendMoneyValue-title {
+  font-size: 18px;
+  position: absolute;
+  margin-left: 84px;
+}
+.SendMoneyValue-options {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.SendMoneyValue-money {
+  font-size: 36px;
+  color: #9f9f9f;
+}
+
+.SendMoneyValue-money-Subtitle {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.SendMoneyValue-InputDiv {
+  width: 100%;
+  margin-top: 35px;
+}
+.SendMoneyValue-input::placeholder {
+  color: black;
+}
+.SendMoneyValue-NextBtnDiv {
+  width: 320px;
+  position: absolute;
+  margin-top: 118px;
+}
+.SendMoneyValue-NextBtnDiv {
+  width: 320px;
+  height: 60px;
+  border-radius: 0%;
+}

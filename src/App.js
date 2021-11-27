@@ -3,7 +3,6 @@ import { ToastContainer } from "react-toastify";
 
 import LoginPage from "./pages/Login/LoginPage";
 import MainPage from "./pages/Main/MainPage";
-import MakeCardAgreePage from "./pages/MakeCardAgree/MakeCardAgreePage";
 import MakeCardInfoPage from "./pages/MakeCardInfo/MakeCardInfoPage";
 import MakeCardNickPage from "./pages/MakeCardNick/MakeCardNickPage";
 import MakeCardPasswordPage from "./pages/MakeCardPassword/MakeCardPasswordPage";
@@ -11,6 +10,10 @@ import MakeCardSuccessPage from "./pages/MakeCardSuccess/MakeCardSuccessPage";
 import RegisterPage from "./pages/Register/RegisterPage";
 import RegisterFinalPage from "./pages/RegisterFinal/RegisterFinalPage";
 import RegisterProfilePage from "./pages/RegisterProfile/RegisterProfilePage";
+import SendMoneyChoosePage from "./pages/SendMoneyChoose/SendMoneyChoosePage";
+import SendMoneyPasswordPage from "./pages/SendMoneyPassword/SendMoneyPasswordPage";
+import SendMoneySuccessPage from "./pages/SendMoneySuccess/SendMoneySuccessPage";
+import SendMoneyValuePage from "./pages/SendMoneyValue/SendMoneyValuePage";
 import SimpleLoginPage from "./pages/SimpleLogin/SimpleLoginPage";
 import SimpleRegisterPage from "./pages/SimpleRegister/SimpleRegisterPage";
 import StartingPage from "./pages/Starting/StartingPage";
@@ -39,6 +42,22 @@ function App() {
           <Route path="/makecard/nick" component={MakeCardNickPage} />
           <Route path="/makecard/password" component={MakeCardPasswordPage} />
           <Route path="/makecard/success" component={MakeCardSuccessPage} />
+          <Route
+            exact
+            path="/sendmoney/choose"
+            component={SendMoneyChoosePage}
+          />
+          <Route exact path="/sendmoney/value" component={SendMoneyValuePage} />
+          <Route
+            exact
+            path="/sendmoney/password"
+            component={SendMoneyPasswordPage}
+          />
+          <Route
+           exact
+            path="/sendmoney/success"
+            component={SendMoneySuccessPage}
+          />
         </Switch>
       </Router>
     </div>
