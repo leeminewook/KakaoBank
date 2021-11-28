@@ -3,10 +3,13 @@ import "./SendMoneyChoose.css";
 import bankLogo from "../../assets/img/997BD7335D089C3023.png";
 import modalBtnImg from "../../assets/img/right-arrow 1.png";
 import { useHistory } from "react-router-dom";
-const SendMoneyChoose = () => {
+import ModalContainer from "../../containers/Modal/ModalContainer";
+
+const SendMoneyChoose = ({ isModal, setIsModal, modalName, setModalName }) => {
   const history = useHistory();
   return (
     <>
+      <ModalContainer />
       <div className="SendmoneyChooseForm">
         <div>
           <div className="SendmoneyChooseTitle">이체</div>
@@ -30,7 +33,14 @@ const SendMoneyChoose = () => {
                 <div className="ChooseBankSubtitle">입금 은행</div>
               </div>
               <div className="ChooseBank-optoins-buttonDiv">
-                <img src={modalBtnImg} alt="" className="modalBtnImg" />
+                <img
+                  src={modalBtnImg}
+                  alt=""
+                  className="modalBtnImg"
+                  onClick={() => {
+                    setIsModal(!isModal);
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -46,7 +56,7 @@ const SendMoneyChoose = () => {
           <button
             className="SendmoneyChooseOptoinsBtn nextBtn"
             onClick={() => {
-              history.push("/sendmoney/value");
+              setIsModal(!isModal);
             }}
           >
             확인
