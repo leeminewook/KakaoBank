@@ -1,0 +1,126 @@
+body {
+  font-family: Kakao OTF;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.modal-close {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.829);
+  z-index: 1000;
+  box-sizing: border-box;
+}
+.bankModal {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 1100;
+  padding: 30px 20px 30px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  height: 387px;
+  box-sizing: border-box;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.bankModalCancle {
+  font-size: 18px;
+  position: absolute;
+  left: 294px;
+}
+.bankModalTitle {
+  font-size: 24px;
+}
+.bankModalBankList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  box-sizing: border-box;
+  margin-top: 35px;
+}
+
+.checkModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 1100;
+  padding: 20px 20px 0px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 300px;
+  height: 305px;
+  box-sizing: border-box;
+}
+.checkModalTitle {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+}
+.checkModalTitleNum {
+  font-size: 14px;
+  margin-left: 30px;
+}
+.checkModalTitleOptoins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 33px;
+}
+.checkModalTitleOptionsName {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+.checkModalTitleOptionsText {
+  font-size: 22px;
+  font-weight: normal;
+}
+.checkModalSubmitDiv {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin-top: 40px;
+}
+.checkModalSubmitDivNoDiv {
+  width: 50%;
+  height: 100%;
+}
+.checkModalSubmitDivNoBtn {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Kakao OTF;
+  font-style: normal;
+  font-weight: bold;
+}
+.checkModalSubmitDivYesDiv {
+  width: 50%;
+  height: 100%;
+}
+.checkModalSubmitDivYesBtn {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Kakao OTF;
+  font-style: normal;
+  font-weight: bold;
+}

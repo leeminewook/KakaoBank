@@ -1,0 +1,19 @@
+.bankCardForm {
+  border-radius: 10px;
+  width: 139px;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe700;
+}
+.bankCardForm-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check {
+  width: 101px;
+  height: 45px;
+  font-weight: 600;
+}

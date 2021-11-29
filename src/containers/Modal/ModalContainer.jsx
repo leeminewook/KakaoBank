@@ -1,10 +1,10 @@
 import React from "react";
 import Modal from "../../components/Modal/Modal";
 
-const ModalContainer = () => {
+const ModalContainer = ({ isModal, modalName, onClose }) => {
   return (
     <>
-      <Modal />
+      <Modal isModal={isModal} modalName={modalName} onClose={onClose} />
     </>
   );
 };

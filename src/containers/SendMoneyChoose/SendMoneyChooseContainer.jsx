@@ -5,6 +5,9 @@ import { isModalState, modalNameState } from "../../stores/StateStore";
 const SendMoneyChooseContainer = () => {
   const [isModal, setIsModal] = useRecoilState(isModalState);
   const [modalName, setModalName] = useRecoilState(modalNameState);
+  const onClose = () => {
+    setIsModal(false);
+  };
   return (
     <>
       <SendMoneyChoose
@@ -12,6 +15,7 @@ const SendMoneyChooseContainer = () => {
         setIsModal={setIsModal}
         modalName={modalName}
         setModalName={setModalName}
+        onClose={onClose}
       />
     </>
   );

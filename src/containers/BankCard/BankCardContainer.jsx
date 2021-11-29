@@ -1,10 +1,10 @@
 import React from "react";
 import BankCard from "../../components/BankCard/BankCard";
 
-const BankCardContainer = () => {
+const BankCardContainer = ({ checkBank }) => {
   return (
     <>
-      <BankCard />
+      <BankCard checkBank={checkBank} />
     </>
   );
 };
