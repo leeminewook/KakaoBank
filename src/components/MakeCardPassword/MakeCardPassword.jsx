@@ -3,7 +3,7 @@ import MakeCardTitle from "../MakeCardTitle/MakeCardTitle";
 import "./MakeCardPassword.css";
 import SimpleInputContainer from "../../containers/SimpleInput/SimpleInputContainer";
 import { useHistory } from "react-router-dom";
-const MakeCardPassword = () => {
+const MakeCardPassword = ({ password, setPassowrd, tryMakeCard }) => {
   const history = useHistory();
 
   return (
@@ -16,13 +16,21 @@ const MakeCardPassword = () => {
           <br /> 설정해주세요
         </div>
         <div className="MakeCardPasswordSimpleInputDiv">
-          <SimpleInputContainer i="4" />
+          <input
+            type="password"
+            className="SimpleLoginInput"
+            maxLength="4"
+            value={password}
+            onChange={(e) => {
+              setPassowrd(e.target.value);
+            }}
+          />
         </div>
         <div className="MakeCardPasswordSubmitDiv">
           <button
             className="MakeCardPasswordSubmitBtn kakaoBtn"
             onClick={() => {
-              history.push("/makecard/success");
+              tryMakeCard();
             }}
           >
             확인

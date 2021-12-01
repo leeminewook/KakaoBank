@@ -15,8 +15,8 @@
 }
 
 .profileImg {
-  width: 200px;
-  height: 200px;
+  width: 200px !important;
+  height: 200px !important;
 }
 .profile-optoins-pictureDiv {
   margin-bottom: 41px;

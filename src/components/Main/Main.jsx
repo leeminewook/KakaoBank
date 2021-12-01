@@ -20,7 +20,7 @@ const Main = ({ cardList }) => {
           </div>
         </div>
         <div className="mainOptions">
-          {/* {cardList.map((card, index) => (
+          {cardList.map((card, index) => (
             <MainCardContainer
               main={main}
               accountNumber={card.accountNumber}
@@ -28,11 +28,7 @@ const Main = ({ cardList }) => {
               money={card.money}
               nickname={card.nickname}
             />
-          ))} */}
-          <MainCardContainer main={main} />
-          <MainCardContainer main={main} />
-          <MainCardContainer main={main} />
-          <MainCardContainer main={main} />
+          ))}
         </div>
         <div
           className="main-addCardDiv"

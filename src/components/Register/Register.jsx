@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Register.css";
 import { useHistory } from "react-router-dom";
+import gray from "../../assets/img/Ellipse 2.png";
+import yellow from "../../assets/img/Ellipse 1.png";
 const Register = ({
   id,
   setId,
@@ -14,8 +16,14 @@ const Register = ({
   setResidentRegistrationNumber,
   nickName,
   setNickName,
+  check,
+  setCheck,
+  tryCheckId,
+  isCheckId,
+  setIsCheckId,
 }) => {
   const history = useHistory();
+  const [isChecked, setIsChecked] = useState(false);
 
   return (
     <>
@@ -34,7 +42,16 @@ const Register = ({
                 />
               </div>
               <div className="register-options-id-Btn">
-                <button className="kakaoBtn idButton">중복확인</button>
+                <button
+                  className={
+                    isCheckId ? "kakaoBtn idButton" : "nextBtn idButton"
+                  }
+                  onClick={() => {
+                    tryCheckId(id);
+                  }}
+                >
+                  중복확인
+                </button>
               </div>
             </div>
           </div>
@@ -107,7 +124,26 @@ const Register = ({
           </div>
           <div className="register-optoins-check">
             <div className="register-options-check-boxDiv">
-              <input type="radio" className="checkBox" />
+              {isChecked ? (
+                <img
+                  src={yellow}
+                  alt=""
+                  className="register-options-check-boxDiv-Img"
+                  onClick={() => {
+                    setIsChecked(!isChecked);
+                    // console.log("A");
+                  }}
+                />
+              ) : (
+                <img
+                  src={gray}
+                  alt=""
+                  className="register-options-check-boxDiv-Img"
+                  onClick={() => {
+                    setIsChecked(!isChecked);
+                  }}
+                />
+              )}
             </div>
             <a href="/" className="register-options-check-title">
               약관동의
@@ -123,13 +159,17 @@ const Register = ({
               </button>
             </div>
             <div className="registerDi">
-              <button
-                className="registerReqBtn kakaoBtn"
-                onClick={() => history.push("/profile")}
-                // onClick={() => {}}
-              >
-                다음으로
-              </button>
+              {isChecked ? (
+                <button
+                  className="registerReqBtn kakaoBtn"
+                  onClick={() => history.push("/simpleregister")}
+                  // onClick={() => {}}
+                >
+                  다음으로
+                </button>
+              ) : (
+                <button className="registerReqBtn nextBtn">다음으로</button>
+              )}
             </div>
           </div>
         </div>

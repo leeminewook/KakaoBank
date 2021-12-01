@@ -46,6 +46,8 @@
 .idButton {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  font-size: 20px;
 }
 .register-options-id-Btn {
   width: 30%;
@@ -157,9 +159,16 @@
 .register-optoins-check {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
-
 .register-options-check-boxDiv {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-options-check-boxDiv-Img {
+  width: 30px;
 }
 .register-options-check-title {
   font-size: 18px;
@@ -187,4 +196,6 @@
 .registerReqBtn {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  font-size: 20px;
 }

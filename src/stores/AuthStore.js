@@ -27,6 +27,22 @@ const nickNameState = atom({
   default: "",
 });
 
+const checkState = atom({
+  keyL: "checkState",
+  default: false,
+});
+const imgBase64State = atom({
+  key: "imgBase64State",
+  default: [],
+});
+const imgFileState = atom({
+  key: "imgFileState",
+  default: null,
+});
+const registerSimpleNumber = atom({
+  key: "registerSimpleNumber",
+  default: "",
+});
 export {
   idState,
   pwState,
@@ -34,4 +50,8 @@ export {
   nameState,
   residentRegistrationNumberState,
   nickNameState,
+  checkState,
+  imgBase64State,
+  imgFileState,
+  registerSimpleNumber,
 };

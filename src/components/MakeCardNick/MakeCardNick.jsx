@@ -3,7 +3,14 @@ import "./MakeCardNick.css";
 import MakeCardTitle from "../../components/MakeCardTitle/MakeCardTitle";
 import { useHistory } from "react-router-dom";
 
-const MakeCardNick = () => {
+const MakeCardNick = ({
+  name,
+  setName,
+  rrm,
+  setRrm,
+  nickName,
+  setNickName,
+}) => {
   const history = useHistory();
   return (
     <>
@@ -19,17 +26,24 @@ const MakeCardNick = () => {
         <div className="MakeCardNick-options-div">
           <div className="MakeCardNick-name">
             <div className="MakeCardNick-options-nameTitle">이름</div>
-            <div className="MakeCardNick-options-name">이민욱</div>
+            <div className="MakeCardNick-options-name">{name}</div>
           </div>
           <div className="MakeCardNick-birth">
             <div className="MakeCardNick-options-birthTitle">주민등록번호</div>
-            <div className="MakeCardNick-options-birth">001230-3******</div>
+            <div className="MakeCardNick-options-birth">{rrm}******</div>
           </div>
         </div>
         <div className="MakeCardNick-nick">
           <div className="MakeCardNick-nickTitle">통장 별명</div>
           <div className="MakeCardNick-nickInputDiv">
-            <input type="text" className="MakeCardNick-nickInput" />
+            <input
+              type="text"
+              className="MakeCardNick-nickInput"
+              value={nickName}
+              onChange={(e) => {
+                setNickName(e.target.value);
+              }}
+            />
           </div>
         </div>
         <div className="MakeCardNickSubmitDiv">

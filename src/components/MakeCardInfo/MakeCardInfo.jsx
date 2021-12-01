@@ -3,7 +3,7 @@ import MakeCardTitle from "../MakeCardTitle/MakeCardTitle";
 import "./MakeCardInfo.css";
 import { useHistory } from "react-router-dom";
 
-const MakeCardInfo = () => {
+const MakeCardInfo = ({ name, setName, rrm, setRrm, trySelfCertification }) => {
   const history = useHistory();
 
   return (
@@ -19,7 +19,14 @@ const MakeCardInfo = () => {
           <div className="MakeCardInfo-options-nameDiv">
             <div className="MakeCardInfo-options-nameDiv-title">이름</div>
             <div className="MakeCardInfo-options-nameinputDiv">
-              <input type="text" className="MakeCardInfo-nameInput" />
+              <input
+                type="text"
+                className="MakeCardInfo-nameInput"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+              />
             </div>
           </div>
           <div className="MakeCardInfo-options-birthDiv">
@@ -27,7 +34,14 @@ const MakeCardInfo = () => {
               주민등록번호
             </div>
             <div className="MakeCardInfo-options-birthinputDiv">
-              <input type="text" className="MakeCardInfo-birthInput" />
+              <input
+                type="text"
+                className="MakeCardInfo-birthInput"
+                value={rrm}
+                onChange={(e) => {
+                  setRrm(e.target.value);
+                }}
+              />
             </div>
           </div>
         </div>
@@ -35,7 +49,7 @@ const MakeCardInfo = () => {
           <button
             className="MakeCardSubmitBtn nextBtn"
             onClick={() => {
-              history.push("/makecard/nick");
+              trySelfCertification(name, rrm);
             }}
           >
             다음 단계로

@@ -1,7 +1,9 @@
 import React from "react";
 import "./Login.css";
 import Logo from "../../assets/img/997BD7335D089C3023.png";
+import { useHistory } from "react-router";
 const Login = ({ id, setId, password, setPassword, tryLogin }) => {
+  const history = useHistory();
   return (
     <>
       <div className="LoginForm">
@@ -31,6 +33,14 @@ const Login = ({ id, setId, password, setPassword, tryLogin }) => {
               />
             </div>
           </div>
+        </div>
+        <div
+          className="goSimpleLogin"
+          onClick={() => {
+            history.push("/simplelogin");
+          }}
+        >
+          간편인증로그인
         </div>
         <div className="Login-LoginBtnDiv">
           <button

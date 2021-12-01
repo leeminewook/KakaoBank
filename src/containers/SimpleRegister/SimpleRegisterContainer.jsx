@@ -1,10 +1,13 @@
 import React from "react";
+import { useRecoilState } from "recoil";
 import SimpleRegister from "../../components/SimpleRegister/SimpleRegister";
-
+import { registerSimpleNumber } from "../../stores/AuthStore";
 const SimpleRegisterContainer = () => {
+  const [simpleNum, setSimpleNum] = useRecoilState(registerSimpleNumber);
+
   return (
     <>
-      <SimpleRegister />
+      <SimpleRegister simpleNum={simpleNum} setSimpleNum={setSimpleNum} />
     </>
   );
 };
